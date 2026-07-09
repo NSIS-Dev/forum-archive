@@ -20,7 +20,7 @@ jobs:
       - name: Fetch forum data
         run: |
           rm -rf data
-          git clone --depth 1 https://x-access-token:${{ secrets.NSIS_FORUM_DATA_TOKEN }}@github.com/visbot/forum-data.git data
+          git clone --depth 1 https://x-access-token:${{ secrets.NSIS_FORUM_DATA_TOKEN }}@github.com/NSIS-Dev/forum-data.git data
 
       - name: Install, build, and upload your site
         uses: withastro/action@b7d53628f8b666036b0238aadb0b984a2a489f26 # v6.1.1
