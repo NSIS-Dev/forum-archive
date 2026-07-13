@@ -6,7 +6,7 @@ import castro from './.castro/integration.ts';
 export default defineConfig({
 	integrations: [
 		castro({
-			title: 'NSIS Forums Archive',
+			title: 'NSIS Forum Archive',
 			githubPages: true,
 		}),
 		sitemap(),
