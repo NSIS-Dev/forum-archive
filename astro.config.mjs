@@ -7,8 +7,8 @@ export default defineConfig({
 	integrations: [
 		castro({
 			title: 'NSIS Forum Archive',
-      description: 'Mirror of the AVS forum on Winamp.com',
-      keywords: ['AVS Presets', 'avs', 'Advanced Visualization Studio', 'winamp', 'wvs', 'Winamp Visualization Studio', 'audio visualization'],
+	  description: 'Mirror of the NSIS discussion forum on Winamp.com',
+    keywords: ['Nullsoft Scriptable Install System', 'nsis', 'windows installer', 'DSL', 'install script', 'windows setup'],
 			githubPages: true,
 		}),
 		sitemap(),
