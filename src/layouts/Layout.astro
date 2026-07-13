@@ -22,10 +22,7 @@ const { title = SITE_NAME, indexable = true } = Astro.props;
     {META_DESCRIPTION && <meta name="description" content={META_DESCRIPTION} />}
     {META_KEYWORDS && <meta name="keywords" content={META_KEYWORDS} />}
     <link rel="icon" href={routePath("/favicon.svg")} />
-    <meta
-      name="google-site-verification"
-      content="a4rrqwq785F4Gj64b5TnWOOvnYfnxdq0uy2fsNCk-4k"
-    />
+    <link rel="sitemap" href={`${import.meta.env.BASE_URL}/sitemap-index.xml`} />
     <script is:inline>
       window.__popup = (function () {
         var PAD = 8;
@@ -109,7 +106,7 @@ const { title = SITE_NAME, indexable = true } = Astro.props;
           href={routePath("/")}
           class="text-lg font-bold no-underline shrink-0"
         >
-          {SITE_NAME}
+          ⌘ {SITE_NAME}
         </a>
         <div class="relative" id="search-wrapper">
           <button
@@ -157,6 +154,7 @@ const { title = SITE_NAME, indexable = true } = Astro.props;
                     id="search-input"
                     type="search"
                     placeholder="Search…"
+                    aria-label="Search"
                     aria-autocomplete="list"
                     aria-controls="search-results"
                     aria-activedescendant=""
