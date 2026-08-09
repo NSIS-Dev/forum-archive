@@ -8,7 +8,7 @@ export default defineConfig({
 		castro({
 			title: 'Forum Archive',
 			description: 'Unofficial archive for the NSIS discussion forum',
-      keywords: ['Nullsoft Scriptable Install System', 'nsis', 'windows installer', 'DSL', 'install script', 'windows setup'],
+			keywords: ['Nullsoft 			Scriptable Install System', 'nsis', 'windows installer', 'DSL', 'install script', 'windows setup'],
 			githubPages: true,
 		}),
 		sitemap(),
