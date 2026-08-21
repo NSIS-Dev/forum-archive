@@ -1,4 +1,4 @@
-name: Bulk Submit to Internet Archive
+name: Submit to Internet Archive
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
 
       - name: Generate URL Chunks
         id: generate-chunks
-        uses: './.github/actions/generate-chunks'
+        uses: "./.github/actions/generate-chunks"
         with:
           sitemap-url: ${{ format('{0}/sitemap-index.xml', steps.pages.outputs.base_url) }}
 
@@ -79,7 +79,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Submit Chunk to Internet Archive
-        uses: './.github/actions/submit-to-ia'
+        uses: "./.github/actions/submit-to-ia"
         with:
           url-chunk: ${{ toJson(matrix.chunk) }}
           ia-access-key: ${{ secrets.IA_ACCESS_KEY }}
